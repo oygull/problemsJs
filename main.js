@@ -192,15 +192,239 @@
 // Problem #164
 
 // let arr = [11,14,17,20,23];
-// let n = arr[1]-arr[0];
+// let n = 3;
 // let temp = true;
-// for(let i =0; i<arr.length; i++){
-//   if(arr[i]+n==arr[i+1]){
-//     console.log(n);
-//     temp = false;
+// for(let i =arr.length-1; i>0; i--){
+
+//   if(arr[i]-n !== arr[i-1]){
+//   temp = false;
+//   break;
+//   }
+//   else if(arr[i]-n==arr[i-1]){
+//     temp = n;
 //   }
 // }
-// if(temp==true){
-//   console.log(false);
-// }
+// console.log(temp);
 
+
+// Problem #165
+
+// let arr = [2,6,18];
+// let q = 3;
+// let temp = true;
+// for(let i =arr.length-1; i>0; i--){
+
+//   if(arr[i]/q !== arr[i-1]){
+//   temp = false;
+//   break;
+//   }
+//   else if(arr[i]/q==arr[i-1]){
+//     temp = q;
+//   }
+// }
+// console.log(temp);
+
+
+// Problem #166
+
+// let arr = [4,-2, 5, -10, 12, 3, -4, -5];
+// let natija = true;
+
+// if (arr[0] < 0) {
+//   for (let i = 0; i < arr.length; i++) {
+//      if (i % 2 == 0 && arr[i] > 0) {
+//         natija = i;
+//         break;
+            
+//     } else if (i % 2 != 0 && arr[i] < 0){
+//        natija = i;
+//       break;
+//      }
+//    }
+// } else {
+//     for (let i = 0; i < arr.length; i++) {
+//       if (i % 2 == 0 && arr[i] < 0) {
+//         natija = i;
+//         break;
+            
+//     } else if (i % 2 != 0 && arr[i] > 0){
+//        natija = i;
+//        break;
+//      }
+//  }
+// }
+// console.log(natija);
+
+
+// Problem #167
+
+// let arr = [-2,5,-10,12,3,-4,-5]
+// let even = [];
+// let s =0;
+// for ( let i = 0; i < arr.length; i++){
+//   if(i%2==0){
+//     even[even.length]= arr[i]
+//   }
+// }
+// for ( let i = 0; i < even.length; i++){
+//  s+=even[i];
+// }
+// console.log(`Sum is equal to ${s}`);
+
+
+
+// Problem #168
+
+// let arr = [-2,5,-10,12,3,-4,-5]
+// let newArr = [];
+
+// for (let i=0; i<arr.length; i++){
+//   if(arr[i]>arr[i+1]){
+//     newArr[newArr.length]= i;
+//   }
+// }
+// console.log(newArr +" c = "+ newArr.length);
+
+
+// Problem #169
+
+// let arr = [-2,5,-10,12,3,-4,-5]
+// let newArr = [];
+
+// for (let i=arr.length-1; i>0; i--){
+//   if(arr[i]>arr[i+1]){
+//     newArr[newArr.length]= arr[i];
+//   }
+// }
+// console.log(newArr +" c = "+ newArr.length);
+
+
+// Problem #170
+
+// let arr = [1,-3,-1,-4,7,90]
+// let newArr = [];
+// let r=10;
+// let b = 0;
+
+// for (let i=0; i<arr.length; i++){
+//   if(arr[i]==r){
+//     b = arr[i];
+//     break;
+//   }
+ 
+// }
+//  let closest = arr[0];
+//   for(let item of arr){
+//     if(Math.abs(item - r)<Math.abs(closest - r)){
+//       closest = item;
+//     }
+//   }
+//   console.log(closest);
+
+
+// Problem #171
+
+// const arr = [1,-10,2,1,2,5]
+//  let counts = {}
+
+//  for(let i =0; i < arr.length; i++){ 
+//      if (counts[arr[i]]){
+//      counts[arr[i]] += 1
+//      } else {
+//      counts[arr[i]] = 1
+//      }
+//     }
+//   console.log(counts)
+
+
+// Problem #172
+
+// let first = [true, -5];
+// let second = [2, null];
+
+// let a = first[0];
+// let b = first[1];
+// first[0]= a;
+// first[1]= b;
+
+// console.log(first);
+// console.log(second);
+
+
+// Problem #173
+
+// let arr = [1,-10,2,1,2,5];
+// let newArr = [];
+// let a = 0;
+// let b = 0;
+
+// for(let i=0; i<arr.length; i++){
+//   if(arr[i]<5){
+//     a = arr[i]*2;
+//     newArr[newArr.length] = a;
+//   }
+//   if(arr[i]==5 || arr[i]>5){
+//     b = arr[i]/2;
+//     newArr[newArr.length] = b;
+//   }
+// }
+// console.log(newArr);
+
+
+
+// Problem #174
+
+// let first = [1,-3,10];
+// let second = [12,4,-3];
+// let arr =[];
+// let c = 0;
+
+// for(let i=0; i<first.length; i++){
+//  if(first[i]>second[i]){
+//    c= first[i]
+//  }
+//  else if(first[i]<second[i]){
+//   c= second[i]
+// }
+// arr[arr.length]=c;
+// }
+// console.log(arr);
+
+
+// Problem #175
+
+// let arr = [1,2,3,4,5];
+// let even = [];
+
+// for(let i=0; i<arr.length; i++){
+//   if(arr[i]%2==0){
+//     even[even.length]=arr[i];
+//   }
+// }
+// console.log(even);
+
+
+// Problem #176
+
+// let arr = [1,2,3,4,5];
+// let newArr = [];
+// let s=0;
+
+// for(let i=1; i<arr.length+1; i++){
+//   s+=i;
+//   newArr[newArr.length]=s;
+// }
+// console.log(newArr);
+
+
+// Problem #177
+
+let arr = [1,2,3,4,5];
+let newArr = [];
+let s=0;
+
+  for(let i=arr.length-1; i>=0; i--){
+    s+=arr[i];
+    newArr.unshift(s);
+   }
+   console.log(newArr);
